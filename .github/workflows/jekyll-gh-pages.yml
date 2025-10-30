@@ -33,11 +33,10 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
         
-      # This is the most important step:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Point this to the folder containing your index.html
+          # This path must match the folder containing your index.html
           path: './privacy_policy_site/web' 
           
       - name: Deploy to GitHub Pages
